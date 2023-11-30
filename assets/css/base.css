@@ -347,5 +347,22 @@ img:not([src]):not([srcset]) {
 }
 
 main{
-	padding-top: 150px;
+	padding-top: 160px;
+}
+.text-3-line {
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 3;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+}
+
+.text-2-line {
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 2;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
 }
