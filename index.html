@@ -1,386 +1,836 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
-	      rel="stylesheet">
-	<link rel="stylesheet" href="./fonts/all.min.css"/>
-	<link rel="stylesheet" href="./assets/lib/bootstrap5/bootstrap.min.css"/>
-	<link rel="stylesheet" href="./assets/lib/swiper/swiper-bundle.min.css"/>
-	<link rel="stylesheet" href="./assets/css/base.css"/>
-	<link rel="stylesheet" href="./assets/css/style.css"/>
-	<title>Trang chủ</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="./fonts/all.min.css"/>
+    <link rel="stylesheet" href="./assets/lib/bootstrap5/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./assets/lib/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./assets/css/base.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <title>Trang chủ</title>
 </head>
 <body>
 
 <header>
-	<div class="header-top">
-		<div class="container">
-			<div class="row justify-content-between align-items-center ">
-				<div class="col-xl-2 col-lg-2 col-3">
-					<a href="/" class="header-logo d-block" aria-label="">
-						<img src="./assets/image/logo-iwase.jpg" class="img-fluid" alt="Logo">
-					</a>
-				
-				</div>
-				<div class="col-xl-9 col-lg-10 col-9">
-					<div class="header-right ">
-						<div class="header-right__top d-flex align-items-center justify-content-end gap-3 ">
-							<ul class="header-navbar list-unstyled mb-0">
-								<li>
-									<a href="#" aria-label="">TRANG CHỦ</a>
-								</li>
-								<li>
-									<a href="#" aria-label="">CÔNG TY</a>
-								</li>
-								<li>
-									<a href="#" aria-label="">ĐỐI TÁC</a>
-								</li>
-								<li>
-									<a href="#" aria-label="">TIN TỨC</a>
-								</li>
-								<li>
-									<a href="#" aria-label="">TUYỂN DỤNG</a>
-								</li>
-								<li>
-									<a href="#" aria-label="">CATALOG</a>
-								</li>
-								<li>
-									<a href="#" aria-label="">LIÊN HỆ</a>
-								</li>
-							</ul>
-							<div class="header-language position-relative ">
-								<img src="./assets/image/en.png" width="40" class="img-fluid" alt="Logo">
-								<a href="#" class="stretched-link z-index-2"></a>
-							</div>
-						</div>
-						<div class="header-right__bottom d-lg-flex d-none align-items-center justify-content-end gap-3">
-							<div class="header-search position-relative">
-								<form class="" id="frm-search">
-									<div class="header-search__inner d-flex align-items-center position-relative">
-										<input type="text" placeholder="" class="form-control input-search">
-										<button type="submit" class="button-search">
-											<i class="far fa-search"></i>
-										</button>
-									</div>
-								</form>
-								<ul class="list-unstyled mb-0 list-result-search" id="result-search">
-									<li>
-										<a href="#" class="d-flex  gap-2" aria-label="">
+    <div class="header-top">
+        <div class="container">
+            <div class="row justify-content-between align-items-center ">
+                <div class="col-xl-2 col-lg-2 col-3">
+                    <div class="d-flex align-items-center">
+                        <a href="/" class="header-logo d-block" aria-label="">
+                            <img src="./assets/image/logo-iwase.jpg" class="img-fluid" alt="Logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-9 col-lg-10 col-9">
+                    <div class="header-right ">
+                        <div class="header-right__top d-flex align-items-center justify-content-end gap-3 ">
+                            <div class="header-navbar__inner">
+                                <button class="close-header-mobile d-lg-none d-flex" id="close-menu">
+                                    <i class="fal fa-times"></i>
+                                </button>
+                                <ul class="header-navbar list-unstyled mb-0">
+                                    <li>
+                                        <a href="#" aria-label="">TRANG CHỦ</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" aria-label="">CÔNG TY</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" aria-label="">ĐỐI TÁC</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" aria-label="">TIN TỨC</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" aria-label="">TUYỂN DỤNG</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" aria-label="">CATALOG</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" aria-label="">LIÊN HỆ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="header-language position-relative ">
+                                <img src="./assets/image/en.png" width="40" class="img-fluid" alt="Logo">
+                                <a href="#" class="stretched-link z-index-2"></a>
+                            </div>
+                        </div>
+                        <div class="header-right__bottom d-lg-flex d-none align-items-center justify-content-end gap-3">
+                            <div class="header-search position-relative">
+                                <form class="" id="frm-search">
+                                    <div class="header-search__inner d-flex align-items-center position-relative">
+                                        <input type="text" placeholder="" class="form-control input-search">
+                                        <button type="submit" class="button-search">
+                                            <i class="far fa-search"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                                <ul class="list-unstyled mb-0 list-result-search" id="result-search">
+                                    <li>
+                                        <a href="#" class="d-flex  gap-2" aria-label="">
 											<span class="item-image flex-shrink-0">
 												<img src="./assets/image/product.jpg" width="100" alt="">
 											</span>
-											<span class="item-content">
+                                            <span class="item-content">
 												<span class="item-content__title">Cảm biến hình ảnh Cognex In-sight
 													Snapp</span>
 												<span class="item-content__text">text Cảm biến hình ảnh Cognex In-sight
 													Snapp Cảm biến hình ảnh Cognex In-sight SnappCảm biến hình ảnh
 													Cognex In-sight SnappCảm biến hình ảnh Cognex In-sight Snapp</span>
 											</span>
-										</a>
-									</li>
-									<li>
-										<a href="#" class="d-flex  gap-2" aria-label="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="d-flex  gap-2" aria-label="">
 											<span class="item-image flex-shrink-0">
 												<img src="./assets/image/product.jpg" width="100" alt="">
 											</span>
-											<span class="item-content">
+                                            <span class="item-content">
 												<span class="item-content__title">Cảm biến hình ảnh Cognex In-sight
 													Snapp</span>
 												<span class="item-content__text">text Cảm biến hình ảnh Cognex In-sight
 													Snapp Cảm biến hình ảnh Cognex In-sight SnappCảm biến hình ảnh
 													Cognex In-sight SnappCảm biến hình ảnh Cognex In-sight Snapp</span>
 											</span>
-										</a>
-									</li>
-									<li>
-										<a href="#" class="d-flex  gap-2" aria-label="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="d-flex  gap-2" aria-label="">
 											<span class="item-image flex-shrink-0">
 												<img src="./assets/image/product.jpg" width="100" alt="">
 											</span>
-											<span class="item-content">
+                                            <span class="item-content">
 												<span class="item-content__title">Cảm biến hình ảnh Cognex In-sight
 													Snapp</span>
 												<span class="item-content__text">text Cảm biến hình ảnh Cognex In-sight
 													Snapp Cảm biến hình ảnh Cognex In-sight SnappCảm biến hình ảnh
 													Cognex In-sight SnappCảm biến hình ảnh Cognex In-sight Snapp</span>
 											</span>
-										</a>
-									</li>
-									<li>
-										<a href="#" class="d-flex  gap-2" aria-label="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="d-flex  gap-2" aria-label="">
 											<span class="item-image flex-shrink-0">
 												<img src="./assets/image/product.jpg" width="100" alt="">
 											</span>
-											<span class="item-content">
+                                            <span class="item-content">
 												<span class="item-content__title">Cảm biến hình ảnh Cognex In-sight
 													Snapp</span>
 												<span class="item-content__text">text Cảm biến hình ảnh Cognex In-sight
 													Snapp Cảm biến hình ảnh Cognex In-sight SnappCảm biến hình ảnh
 													Cognex In-sight SnappCảm biến hình ảnh Cognex In-sight Snapp</span>
 											</span>
-										</a>
-									</li>
-								</ul>
-							</div>
-							<a href="tel:" class="header-hotline d-flex gap-2 align-items-center mb-2"
-							   aria-label="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="tel:" class="header-hotline d-flex gap-2 align-items-center mb-2"
+                               aria-label="">
 								<span class="icon flex-shrink-0">
 									<i class="fas fa-phone-alt"></i>
 								</span>
-								<span class="content d-flex flex-column">
+                                <span class="content d-flex flex-column">
 									<span>Hotline mua hàng</span>
 									<strong>090000 0000</strong>
 								</span>
-							</a>
-						</div>
-						
-						<button class="header-category-mobile border-0  d-lg-none gap-1 d-flex align-items-center  ">
-							DANH MỤC
-						</button>
-						<button class="header-search-mobile border-0 bg-transparent  d-lg-none d-flex">
-							<i class="far fa-search"></i>
-						</button>
-						<button class="header-bars-mobile border-0 bg-transparent d-lg-none d-flex">
-							<i class="fal fa-bars"></i>
-						</button>
-						
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="header-bottom d-lg-flex d-none">
-		<div class="container">
-			<div class="row justify-content-between align-items-center ">
-				<div class="col-xl-3 col-lg-4 col-5">
-					<div class="header-category position-relative">
-						<div class="header-category__title">
+                            </a>
+                        </div>
+
+                        <button class="header-category-mobile border-0  d-lg-none gap-1 d-flex align-items-center  ">
+                            <i class="far fa-list"></i>
+                        </button>
+                        <button class="header-search-mobile border-0   d-lg-none d-flex" id="call-search">
+                            <i class="far fa-search"></i>
+                        </button>
+                        <button class="header-bars-mobile border-0 bg-transparent d-lg-none d-flex" id="menu-bars">
+                            <i class="fal fa-bars"></i>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-search search-mobile">
+            <div class="container">
+                <form class="" id="frm-search-mobile">
+                    <div class="header-search__inner d-flex align-items-center position-relative">
+                        <input type="text" placeholder="" class="form-control input-search">
+                        <button type="submit" class="button-search">
+                            <i class="far fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+                <ul class="list-unstyled mb-0 list-result-search" id="">
+                    <li>
+                        <a href="#" class="d-flex  gap-2" aria-label="">
+											<span class="item-image flex-shrink-0">
+												<img src="./assets/image/product.jpg" width="100" alt="">
+											</span>
+                            <span class="item-content">
+												<span class="item-content__title">Cảm biến hình ảnh Cognex In-sight
+													Snapp</span>
+												<span class="item-content__text">text Cảm biến hình ảnh Cognex In-sight
+													Snapp Cảm biến hình ảnh Cognex In-sight SnappCảm biến hình ảnh
+													Cognex In-sight SnappCảm biến hình ảnh Cognex In-sight Snapp</span>
+											</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="d-flex  gap-2" aria-label="">
+											<span class="item-image flex-shrink-0">
+												<img src="./assets/image/product.jpg" width="100" alt="">
+											</span>
+                            <span class="item-content">
+												<span class="item-content__title">Cảm biến hình ảnh Cognex In-sight
+													Snapp</span>
+												<span class="item-content__text">text Cảm biến hình ảnh Cognex In-sight
+													Snapp Cảm biến hình ảnh Cognex In-sight SnappCảm biến hình ảnh
+													Cognex In-sight SnappCảm biến hình ảnh Cognex In-sight Snapp</span>
+											</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="d-flex  gap-2" aria-label="">
+											<span class="item-image flex-shrink-0">
+												<img src="./assets/image/product.jpg" width="100" alt="">
+											</span>
+                            <span class="item-content">
+												<span class="item-content__title">Cảm biến hình ảnh Cognex In-sight
+													Snapp</span>
+												<span class="item-content__text">text Cảm biến hình ảnh Cognex In-sight
+													Snapp Cảm biến hình ảnh Cognex In-sight SnappCảm biến hình ảnh
+													Cognex In-sight SnappCảm biến hình ảnh Cognex In-sight Snapp</span>
+											</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="d-flex  gap-2" aria-label="">
+											<span class="item-image flex-shrink-0">
+												<img src="./assets/image/product.jpg" width="100" alt="">
+											</span>
+                            <span class="item-content">
+												<span class="item-content__title">Cảm biến hình ảnh Cognex In-sight
+													Snapp</span>
+												<span class="item-content__text">text Cảm biến hình ảnh Cognex In-sight
+													Snapp Cảm biến hình ảnh Cognex In-sight SnappCảm biến hình ảnh
+													Cognex In-sight SnappCảm biến hình ảnh Cognex In-sight Snapp</span>
+											</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class="header-bottom d-lg-flex d-none">
+        <div class="container">
+            <div class="row justify-content-between align-items-center ">
+                <div class="col-xl-3 col-lg-4 col-5">
+                    <div class="header-category position-relative">
+                        <div class="header-category__title">
 							<span class="me-2">
 								<i class="fal fa-bars"></i>
 							</span>
-							DANH MỤC SẢN PHẨM
-						</div>
-						<ul class="list-unstyled mb-0 header-category__absolute" id="navigation-category">
-							<li>
-								<a href="#" aria-label="">
-									Đồng và hợp kim đồng
-									<span><i class="fal fa-angle-right"></i></span>
-								</a>
-								<ul class="list-unstyled mb-0 sub-category">
-									<li>
-										<a href="#" aria-label="">
-											Đồng đỏ tinh luyện
-										</a>
-									</li>
-									<li>
-										<a href="#" aria-label="">
-											Đồng hợp kim
-										</a>
-									</li>
-									<li>
-										<a href="#" aria-label="">
-											Đồng tấm cuộn
-										</a>
-									</li>
-									<span class="category__image d-block pt-2">
+                            DANH MỤC SẢN PHẨM
+                        </div>
+                        <ul class="list-unstyled mb-0 header-category__absolute" id="navigation-category">
+                            <li>
+                                <a href="#" aria-label="">
+                                    Đồng và hợp kim đồng
+                                    <span><i class="fal fa-angle-right"></i></span>
+                                </a>
+                                <ul class="list-unstyled mb-0 sub-category">
+                                    <li>
+                                        <a href="#" aria-label="">
+                                            Đồng đỏ tinh luyện
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" aria-label="">
+                                            Đồng hợp kim
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" aria-label="">
+                                            Đồng tấm cuộn
+                                        </a>
+                                    </li>
+                                    <span class="category__image d-block pt-2">
 										<img src="/assets/image/banner-1.jpg" class="w-100 h-auto">
 									</span>
-								</ul>
-							</li>
-							<li>
-								<a href="#" aria-label="">
-									Vật tiêu hao EWM
-									<span><i class="fal fa-angle-right"></i></span>
-								</a>
-								<ul class="list-unstyled mb-0 sub-category">
-									<li>
-										<a href="#" aria-label="">
-											Đồng đỏ tinh luyện 1
-										</a>
-									</li>
-									<li>
-										<a href="#" aria-label="">
-											Đồng hợp kim 2
-										</a>
-									</li>
-									<li>
-										<a href="#" aria-label="">
-											Đồng tấm cuộn 2
-										</a>
-									</li>
-									<li>
-										<a href="#" aria-label="">
-											Đồng tấm cuộn 2
-										</a>
-									</li>
-									<li>
-										<a href="#" aria-label="">
-											Đồng tấm cuộn 2
-										</a>
-									</li>
-									<span class="category__image d-block pt-2">
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" aria-label="">
+                                    Vật tiêu hao EWM
+                                    <span><i class="fal fa-angle-right"></i></span>
+                                </a>
+                                <ul class="list-unstyled mb-0 sub-category">
+                                    <li>
+                                        <a href="#" aria-label="">
+                                            Đồng đỏ tinh luyện 1
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" aria-label="">
+                                            Đồng hợp kim 2
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" aria-label="">
+                                            Đồng tấm cuộn 2
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" aria-label="">
+                                            Đồng tấm cuộn 2
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" aria-label="">
+                                            Đồng tấm cuộn 2
+                                        </a>
+                                    </li>
+                                    <span class="category__image d-block pt-2">
 										<img src="/assets/image/banner-2.jpg" class="w-100 h-auto">
 									</span>
-								</ul>
-							</li>
-							<li>
-								<a href="#">
-									Đồ gá kẹp cho máy
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									Vật tiêu hao EWM
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									Đồ gá kẹp cho máy
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									Đồ gá kẹp cho máy
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									Vật tiêu hao EWM
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									Đồ gá kẹp cho máy
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									Đồ gá kẹp cho máy
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									Vật tiêu hao EWM
-									<span><i class="fal fa-angle-right"></i></span>
-								</a>
-								<ul class="list-unstyled mb-0 sub-category">
-									<li>
-										<a href="#" aria-label="">
-											Đồng đỏ tinh luyện 1
-										</a>
-									</li>
-									<li>
-										<a href="#" aria-label="">
-											Đồng hợp kim 2
-										</a>
-									</li>
-									<li>
-										<a href="#" aria-label="">
-											Đồng tấm cuộn 2
-										</a>
-									</li>
-									<li>
-										<a href="#" aria-label="">
-											Đồng tấm cuộn 2
-										</a>
-									</li>
-									<li>
-										<a href="#" aria-label="">
-											Đồng tấm cuộn 2
-										</a>
-									</li>
-									<span class="category__image d-block pt-2">
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Đồ gá kẹp cho máy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Vật tiêu hao EWM
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Đồ gá kẹp cho máy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Đồ gá kẹp cho máy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Vật tiêu hao EWM
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Đồ gá kẹp cho máy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Đồ gá kẹp cho máy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Vật tiêu hao EWM
+                                    <span><i class="fal fa-angle-right"></i></span>
+                                </a>
+                                <ul class="list-unstyled mb-0 sub-category">
+                                    <li>
+                                        <a href="#" aria-label="">
+                                            Đồng đỏ tinh luyện 1
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" aria-label="">
+                                            Đồng hợp kim 2
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" aria-label="">
+                                            Đồng tấm cuộn 2
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" aria-label="">
+                                            Đồng tấm cuộn 2
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" aria-label="">
+                                            Đồng tấm cuộn 2
+                                        </a>
+                                    </li>
+                                    <span class="category__image d-block pt-2">
 										<img src="/assets/image/banner-2.jpg" class="w-100 h-auto">
 									</span>
-								</ul>
-							</li>
-							<li>
-								<a href="#">
-									Đồ gá kẹp cho máy
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									Đồ gá kẹp cho máy
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									Vật tiêu hao EWM
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									Đồ gá kẹp cho máy
-								</a>
-							</li>
-						</ul>
-					
-					</div>
-				</div>
-				<div class="col-xl-9 col-lg-8 col-7">
-					<div class="header-slider">
-						<div class="swiper mySwiper" id="header-slider">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide">
-									<a href="#" class="header-slider__blog transition-default" aria-label="">
-										Cảm biến hình ảnh Cognex In-sight Snapp
-									</a>
-								</div>
-								<div class="swiper-slide">
-									<a href="#" class="header-slider__blog transition-default" aria-label="">
-										Cảm biến hình ảnh Cognex In-sight Snapp 2
-									</a>
-								</div>
-								<div class="swiper-slide">
-									<a href="#" class="header-slider__blog transition-default" aria-label="">
-										Cảm biến hình ảnh Cognex In-sight Snapp 3
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Đồ gá kẹp cho máy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Đồ gá kẹp cho máy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Vật tiêu hao EWM
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Đồ gá kẹp cho máy
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-xl-9 col-lg-8 col-7 ">
+                    <div class="header-slider">
+                        <div class="swiper mySwiper" id="header-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#" class="header-slider__blog transition-default" aria-label="">
+                                        Cảm biến hình ảnh Cognex In-sight Snapp
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="header-slider__blog transition-default" aria-label="">
+                                        Cảm biến hình ảnh Cognex In-sight Snapp 2
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="header-slider__blog transition-default" aria-label="">
+                                        Cảm biến hình ảnh Cognex In-sight Snapp 3
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-hidden"></div>
 </header>
-
 <main>
-	<div class="container">
-		<section class="section-hero position-relative">
-			<div class="swiper mySwiper" id="section-hero">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<div class="section-hero__image">
-							<img src="./assets/image/banner-1.jpg" class="w-100 h-auto" alt="Banner">
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="section-hero__image">
-							<img src="./assets/image/banner-2.jpg" class="w-100 h-auto" alt="Banner">
-						</div>
-					</div>
-				</div>
-				<div class="swiper-pagination"></div>
-				<div class="section-hero__button d-flex align-items-center justify-content-between">
-					<div class="button-swiper button-prev">
-						<i class="fal fa-angle-left"></i>
-					</div>
-					<div class="button-swiper button-next">
-						<i class="fal fa-angle-right"></i>
-					</div>
-				</div>
-			</div>
-		</section>
-	</div>
+    <div class="container">
+        <section class="section-hero position-relative section-gap pt-0">
+            <div class="swiper mySwiper" id="section-hero">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="section-hero__image">
+                            <img src="./assets/image/banner-1.jpg" class="w-100 h-auto" alt="Banner">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="section-hero__image">
+                            <img src="./assets/image/banner-2.jpg" class="w-100 h-auto" alt="Banner">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="section-hero__button d-flex align-items-center justify-content-between">
+                    <div class="button-swiper button-prev">
+                        <i class="fal fa-angle-left"></i>
+                    </div>
+                    <div class="button-swiper button-next">
+                        <i class="fal fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-product bg-white">
+            <div class="section-heading">
+                <div class="heading d-inline-flex">
+                    SẢN PHẨM NỔI BẬT
+                </div>
+            </div>
+            <div class="section-product__inner p-2 pt-0 pb-4">
+                <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-1 g-3">
+                    <div class="col">
+                        <div class="card card-product position-relative">
+                            <div class="card-product__image ratio ratio-4x3 overflow-hidden">
+                                <img src="./assets/image/product.jpg" class="transition-default" alt="">
+                            </div>
+                            <div class="card-product__body card-body">
+                                <div class="card-product__title transition-default ">
+                                    Cảm biến hình ảnh Cognex In-sight Snapp
+                                </div>
+                            </div>
+                            <a href="#" class="stretched-link z-index-1"></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-product position-relative">
+                            <div class="card-product__image ratio ratio-4x3 overflow-hidden">
+                                <img src="./assets/image/product.jpg" class="transition-default" alt="">
+                            </div>
+                            <div class="card-product__body card-body">
+                                <div class="card-product__title transition-default ">
+                                    Cảm biến hình ảnh Cognex In-sight Snapp
+                                </div>
+                            </div>
+                            <a href="#" class="stretched-link z-index-1"></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-product position-relative">
+                            <div class="card-product__image ratio ratio-4x3 overflow-hidden">
+                                <img src="./assets/image/product.jpg" class="transition-default" alt="">
+                            </div>
+                            <div class="card-product__body card-body">
+                                <div class="card-product__title transition-default ">
+                                    Cảm biến hình ảnh Cognex In-sight Snapp
+                                </div>
+                            </div>
+                            <a href="#" class="stretched-link z-index-1"></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-product position-relative">
+                            <div class="card-product__image ratio ratio-4x3 overflow-hidden">
+                                <img src="./assets/image/product.jpg" class="transition-default" alt="">
+                            </div>
+                            <div class="card-product__body card-body">
+                                <div class="card-product__title transition-default ">
+                                    Cảm biến hình ảnh Cognex In-sight Snapp
+                                </div>
+                            </div>
+                            <a href="#" class="stretched-link z-index-1"></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-product position-relative">
+                            <div class="card-product__image ratio ratio-4x3 overflow-hidden">
+                                <img src="./assets/image/product.jpg" class="transition-default" alt="">
+                            </div>
+                            <div class="card-product__body card-body">
+                                <div class="card-product__title transition-default ">
+                                    Cảm biến hình ảnh Cognex In-sight Snapp
+                                </div>
+                            </div>
+                            <a href="#" class="stretched-link z-index-1"></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-product position-relative">
+                            <div class="card-product__image ratio ratio-4x3 overflow-hidden">
+                                <img src="./assets/image/product.jpg" class="transition-default" alt="">
+                            </div>
+                            <div class="card-product__body card-body">
+                                <div class="card-product__title transition-default ">
+                                    Cảm biến hình ảnh Cognex In-sight Snapp
+                                </div>
+                            </div>
+                            <a href="#" class="stretched-link z-index-1"></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-product position-relative">
+                            <div class="card-product__image ratio ratio-4x3 overflow-hidden">
+                                <img src="./assets/image/product.jpg" class="transition-default" alt="">
+                            </div>
+                            <div class="card-product__body card-body">
+                                <div class="card-product__title transition-default ">
+                                    Cảm biến hình ảnh Cognex In-sight Snapp
+                                </div>
+                            </div>
+                            <a href="#" class="stretched-link z-index-1"></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-product position-relative">
+                            <div class="card-product__image ratio ratio-4x3 overflow-hidden">
+                                <img src="./assets/image/product.jpg" class="transition-default" alt="">
+                            </div>
+                            <div class="card-product__body card-body">
+                                <div class="card-product__title transition-default ">
+                                    Cảm biến hình ảnh Cognex In-sight Snapp
+                                </div>
+                            </div>
+                            <a href="#" class="stretched-link z-index-1"></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-product position-relative">
+                            <div class="card-product__image ratio ratio-4x3 overflow-hidden">
+                                <img src="./assets/image/product.jpg" class="transition-default" alt="">
+                            </div>
+                            <div class="card-product__body card-body">
+                                <div class="card-product__title transition-default ">
+                                    Cảm biến hình ảnh Cognex In-sight Snapp
+                                </div>
+                            </div>
+                            <a href="#" class="stretched-link z-index-1"></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-product position-relative">
+                            <div class="card-product__image ratio ratio-4x3 overflow-hidden">
+                                <img src="./assets/image/product.jpg" class="transition-default" alt="">
+                            </div>
+                            <div class="card-product__body card-body">
+                                <div class="card-product__title transition-default ">
+                                    Cảm biến hình ảnh Cognex In-sight Snapp
+                                </div>
+                            </div>
+                            <a href="#" class="stretched-link z-index-1"></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-product position-relative">
+                            <div class="card-product__image ratio ratio-4x3 overflow-hidden">
+                                <img src="./assets/image/product.jpg" class="transition-default" alt="">
+                            </div>
+                            <div class="card-product__body card-body">
+                                <div class="card-product__title transition-default ">
+                                    Cảm biến hình ảnh Cognex In-sight Snapp
+                                </div>
+                            </div>
+                            <a href="#" class="stretched-link z-index-1"></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-product position-relative">
+                            <div class="card-product__image ratio ratio-4x3 overflow-hidden">
+                                <img src="./assets/image/product.jpg" class="transition-default" alt="">
+                            </div>
+                            <div class="card-product__body card-body">
+                                <div class="card-product__title transition-default ">
+                                    Cảm biến hình ảnh Cognex In-sight Snapp
+                                </div>
+                            </div>
+                            <a href="#" class="stretched-link z-index-1"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+        </section>
+        <section class="section-article bg-white mt-5">
+            <div class="section-heading">
+                <div class="heading d-inline-flex">
+                    TIN TỨC & SỰ KIỆN
+                </div>
+            </div>
+            <div class="section-product__inner p-2 pt-0 pb-4">
+                <div class="row g-3">
+                    <div class="col-xl-8">
+                       <div class="row row-cols-lg-2 row-cols-1 g-3">
+                           <div class="col">
+                               <a href="#" aria-label="" class="card-article position-relative overflow-hidden ">
+                                   <div class="card-article__image ratio ratio-4x3 overflow-hidden">
+                                      <img src="./assets/image/product.jpg" class="transition-default" alt="">
+                                   </div>
+                                   <div class="card-article__absolute">
+                                       <div class="card-article__date">24/11/2023</div>
+                                       <div class="card-article__title">
+                                           Động cơ AC servo và ứng dụng giải pháp servo trong tự động hóa
+                                       </div>
+                                   </div>
+                               </a>
+                           </div>
+                           <div class="col">
+                               <a href="#" aria-label="" class="card-article position-relative overflow-hidden ">
+                                   <div class="card-article__image ratio ratio-4x3 overflow-hidden">
+                                       <img src="./assets/image/product.jpg" class="transition-default" alt="">
+                                   </div>
+                                   <div class="card-article__absolute">
+                                       <div class="card-article__date">24/11/2023</div>
+                                       <div class="card-article__title">
+                                           Động cơ AC servo và ứng dụng giải pháp servo trong tự động hóa
+                                       </div>
+                                   </div>
+                               </a>
+                           </div>
+                       </div>
+                    </div>
+                   <div class="col-xl-4">
+                       <div class="card-article-2 position-relative d-flex align-items-start gap-3">
+                           <div class="card-article-2__image overflow-hidden flex-shrink-0">
+                               <img src="./assets/image/product.jpg" width="195" class="transition-default" alt="">
+                           </div>
+                           <div class="card-article-2__content">
+                               <div class="card-article-2__date">2/09/2013</div>
+                               <div class="card-article-2__title">
+                                   KIMZ trưng bầy giải pháp đồ gá ZEROline tại EMO Hannover 2023
+                               </div>
+                           </div>
+                           <a href="#" class="stretched-link"></a>
+                       </div>
+                       <div class="card-article-2 position-relative d-flex align-items-start gap-3">
+                           <div class="card-article-2__image overflow-hidden flex-shrink-0">
+                               <img src="./assets/image/product.jpg" width="195" class="transition-default" alt="">
+                           </div>
+                           <div class="card-article-2__content">
+                               <div class="card-article-2__date">2/09/2013</div>
+                               <div class="card-article-2__title">
+                                   KIMZ trưng bầy giải pháp đồ gá ZEROline tại EMO Hannover 2023
+                                   KIMZ trưng bầy giải pháp đồ gá ZEROline tại EMO Hannover 2023
+                                   KIMZ trưng bầy giải pháp đồ gá ZEROline tại EMO Hannover 2023
+                                   KIMZ trưng bầy giải pháp đồ gá ZEROline tại EMO Hannover 2023
+                               </div>
+                           </div>
+                           <a href="#" class="stretched-link"></a>
+                       </div>
+                   </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-partner bg-white mt-5" >
+            <div class="section-heading">
+                <div class="heading d-inline-flex">
+                    ĐỐI TÁC
+                </div>
+            </div>
+            <div class="section-partner__inner p-2 pt-0 pb-4">
+                <div class="swiper mySwiper" id="section-partner">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#" aria-label="" class="image-partner d-block">
+                                <img src="./assets/image/logo-1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" aria-label="" class="image-partner d-block">
+                                <img src="./assets/image/logo-iwase.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" aria-label="" class="image-partner d-block">
+                                <img src="./assets/image/logi-2.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" aria-label="" class="image-partner d-block">
+                                <img src="./assets/image/logo-1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" aria-label="" class="image-partner d-block">
+                                <img src="./assets/image/logo-iwase.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" aria-label="" class="image-partner d-block">
+                                <img src="./assets/image/logi-2.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" aria-label="" class="image-partner d-block">
+                                <img src="./assets/image/logo-1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" aria-label="" class="image-partner d-block">
+                                <img src="./assets/image/logo-iwase.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" aria-label="" class="image-partner d-block">
+                                <img src="./assets/image/logi-2.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 </main>
+
+<footer>
+    <div class="footer-top">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-xl-7 col-lg-8 pb-4 pb-lg-0">
+                    <div class="footer-column">
+                        <h6 class="footer-heading mb-3">CÔNG TY CỔ PHẦN SẢN XUẤT THƯƠNG MẠI VÀ DỊCH VỤ AZ (AZCOM)</h6>
+                        <ul class="list-unstyled mb-0 d-flex flex-column gap-1">
+                            <li>
+                                <a href="#" target="_blank">
+                                    Trụ sở: D21-NV12 ô số 25, Khu đô thị mới hai bên đường Lê Trọng Tấn, Xã La Phù, Huyện Hoài Đức, Thành phố Hà Nội, Việt Nam
+                                </a>
+                            </li>
+                            <li class="d-flex align-items-center  flex-wrap gap-2">
+                                <a href="tel:">
+                                    Hotline: 09000 000 000
+                                </a>
+                                -
+                                <a href="tel:">
+                                    Hotline: 09000 000 000
+                                </a>
+                                -
+                                <a href="mailto:">
+                                    Email: dangcapnhat@gmail.com
+                                </a>
+                            </li>
+                            <li>Giấy ĐKKD số: 0102992635 do Sở KH&ĐT TP Hà Nội cấp ngày 16.10.2008</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4">
+                    <div class="footer-social d-flex align-items-center justify-content-lg-end justify-content-center gap-2 mb-2">
+                        <a href="#" target="_blank" class="footer-social__item">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" target="_blank" class="footer-social__item">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" target="_blank" class="footer-social__item">
+                            <i class="fab fa-skype"></i>
+                        </a>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-lg-end justify-content-center gap-2">
+                        <a href="#" target="_blank" class="d-block">
+                            <img src="./assets/image/dathongbao_png.png" width="120" alt="">
+                        </a>
+                        <a href="#" target="_blank" class="d-block">
+                            <img src="./assets/image/dmca_protected_16_120.png" width="90" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <ul class="list-unstyled mb-0 d-flex align-items-center flex-wrap justify-content-lg-start justify-content-center">
+                <li>
+                    <a href="#" aria-label="">Quy định chung</a>
+                </li>
+                <li>
+                    <a href="#" aria-label="">Quy định chung</a>
+                </li>
+                <li>
+                    <a href="#" aria-label="">Quy định chung</a>
+                </li>
+                <li>
+                    <a href="#" aria-label="">Quy định chung</a>
+                </li>
+                <li>
+                    <a href="#" aria-label="">Chính sách bảo mật</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</footer>
 
 
 <script src="./assets/lib/jquery/jquery.min.js"></script>

@@ -6,6 +6,7 @@
 
 	--primary-color: #029ee9;
 	--secondary-color:#ba2b4d;
+	--secondary-rgb:186,43,77;
 
 }
 
@@ -346,9 +347,7 @@ img:not([src]):not([srcset]) {
 	z-index: 2 !important;
 }
 
-main{
-	padding-top: 160px;
-}
+
 .text-3-line {
 	overflow: hidden;
 	-o-text-overflow: ellipsis;
@@ -365,4 +364,17 @@ main{
 	-webkit-line-clamp: 2;
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
+}
+.section-gap{
+	padding: 40px 0;
+}
+main{
+	padding-top: 160px;
+	background-color: rgb(241, 240, 241);
+	padding-bottom: 30px;
+}
+@media(max-width: 768px) {
+	main{
+		padding-top: 70px;
+	}
 }
