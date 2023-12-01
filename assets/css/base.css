@@ -5,9 +5,11 @@
 	--transition-default: all 0.3s ease-in-out;
 
 	--primary-color: #029ee9;
+	--primary-hover: #0385c4;
+
 	--secondary-color:#ba2b4d;
 	--secondary-rgb:186,43,77;
-
+	--red-color: #9B0303;
 }
 
 body {
@@ -43,6 +45,9 @@ textarea {
 	-webkit-transition: var(--transition);
 }
 
+textarea{
+	resize: none;
+}
 input:focus,
 textarea:focus,
 select:focus,
