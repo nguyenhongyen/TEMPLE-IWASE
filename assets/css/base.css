@@ -374,12 +374,17 @@ img:not([src]):not([srcset]) {
 	padding: 40px 0;
 }
 main{
-	padding-top: 160px;
+	padding-top: 150px;
 	background-color: rgb(241, 240, 241);
 	padding-bottom: 30px;
 }
 @media(max-width: 768px) {
 	main{
-		padding-top: 70px;
+		padding-top: 60px;
+	}
+}
+@media(max-width: 576px) {
+	main{
+		padding-top: 50px;
 	}
 }

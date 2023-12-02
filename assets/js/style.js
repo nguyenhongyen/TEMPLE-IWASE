@@ -158,8 +158,8 @@
 
 
 	const handleSliderPartner = function () {
-		if ($('#section-partner').length) {
-			new Swiper('#section-partner', {
+		if ($('#section-partner .swiper').length) {
+			new Swiper('#section-partner .swiper', {
 				speed: 1000,
 				slidesPerView: 1.3,
 				spaceBetween: 30,
@@ -167,6 +167,10 @@
 				autoplay: {
 					delay: 3500,
 					disableOnInteraction: true,
+				},
+				pagination: {
+					el: "#section-partner .swiper-pagination",
+					clickable: true,
 				},
 				breakpoints: {
 					320: {
