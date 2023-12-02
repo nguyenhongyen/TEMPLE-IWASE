@@ -135,65 +135,64 @@
 
 	const handleSliderHero = function () {
 		if ($('#section-hero').length) {
-			new Swiper('#section-hero', {
-				speed: 1000,
-				effect: 'fade',
-				slidesPerView: 1,
-				loop: true,
-				autoplay: {
-					delay: 5500,
-					disableOnInteraction: true,
-				},
-				pagination: {
-					el: "#section-hero .swiper-pagination",
-					clickable: true,
-				},
-				navigation: {
-					nextEl: "#section-hero .button-prev",
-					prevEl: "#section-hero .button-next",
-				},
-			});
+			const slider = $('#section-hero');
+			if (slider.length > 0) {
+				const elmSwiper = '#' + slider.attr('id')
+				const objSwiper = {
+					effect: 'fade',
+					autoplay: {
+						delay: 5000,
+						disableOnInteraction: true,
+					},
+					pagination: {
+						el: "#section-hero .swiper-pagination",
+						clickable: true,
+					},
+					navigation: {
+						nextEl: "#section-hero .button-prev",
+						prevEl: "#section-hero .button-next",
+					},
+				}
+				handleSwiper(elmSwiper + ' .swiper', objSwiper);
+			}
 		}
 	}
 
-
 	const handleSliderPartner = function () {
-		if ($('#section-partner .swiper').length) {
-			new Swiper('#section-partner .swiper', {
-				speed: 1000,
-				slidesPerView: 1.3,
-				spaceBetween: 30,
-				loop: true,
-				autoplay: {
-					delay: 3500,
-					disableOnInteraction: true,
-				},
-				pagination: {
-					el: "#section-partner .swiper-pagination",
-					clickable: true,
-				},
-				breakpoints: {
-					320: {
-						slidesPerView: 1.5,
+		if ($('#section-partner').length) {
+			const slider = $('#section-partner');
+			if (slider.length > 0) {
+				const elmSwiper = '#' + slider.attr('id')
+				const objSwiper = {
+					slidesPerView: 1.3,
+					spaceBetween: 30,
+					autoplay: {
+						delay: 3500,
+						disableOnInteraction: true,
 					},
-					425: {
-						slidesPerView: 2,
-					},
-					576: {
-						slidesPerView: 2.5,
-					},
-					768: {
-						slidesPerView: 3.5
-					},
-					992: {
-						slidesPerView: 4.5
-					},
-					1200: {
-						slidesPerView: 6,
-					},
-
+					breakpoints: {
+						320: {
+							slidesPerView: 1.5,
+						},
+						425: {
+							slidesPerView: 2,
+						},
+						576: {
+							slidesPerView: 2.5,
+						},
+						768: {
+							slidesPerView: 3.5
+						},
+						992: {
+							slidesPerView: 4.5
+						},
+						1200: {
+							slidesPerView: 8,
+						},
+					}
 				}
-			});
+				handleSwiper(elmSwiper + ' .swiper', objSwiper);
+			}
 		}
 	}
 
